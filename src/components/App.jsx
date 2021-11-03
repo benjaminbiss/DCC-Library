@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import TitleBar from './TitleBar/TitleBar';
+import Footer from './Footer/Footer';
 import BookViewer from './BookViewer/BookViewer';
 import './App.css'
 
@@ -43,6 +44,7 @@ class App extends Component {
             <div className="container-fluid">
                 <TitleBar /> 
                 <BookViewer book={this.books[this.state.bookNumber]} nextBook={this.goToNextBook} previousBook={this.goToPreviousBook} />
+                <Footer />
             </div>
         )       
     }
